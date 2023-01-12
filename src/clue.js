@@ -102,7 +102,14 @@ function selectRandom(arr) {
 console.log(selectRandom(weaponsArray))
 
 
-function pickMystery() { }
+
+
+function pickMystery() {
+    let mystery = {}
+    mystery = {suspect: selectRandom(suspectsArray), weapon: selectRandom(weaponsArray), room: selectRandom(roomsArray)}
+    return mystery
+}
+console.log (pickMystery() )
 
 
 // ITERATION 3
