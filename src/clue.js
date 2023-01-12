@@ -114,5 +114,6 @@ console.log (pickMystery() )
 
 // ITERATION 3
 
-function revealMystery() { }
-
+function revealMystery(pizza) {
+    return `${pizza.suspect.firstName} ${pizza.suspect.lastName} killed Mr. Boddy using the ${pizza.weapon.name} in the ${pizza.room.name}!` }
+    console.log(revealMystery(pickMystery()))
